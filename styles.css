@@ -27,7 +27,7 @@ body{
 }
 
 .sidebar:hover{
-    width: 240px;
+    width: 260px;
     transition:0.5s;
 } /* AQUI FAZ O EFEITO DO MENU*/
 
@@ -229,4 +229,69 @@ transform: scale(1.2);
 }
 .dark-blue{
     background: rgba(blue);
+}
+
+
+/***** movimentação ******/
+
+.movimentos--recentes{
+    background: #b8b8b8;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+
+}
+
+
+.table--container{
+    width: 100%;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thed{
+    background: rgb(113, 99, 186, 255);
+    color: #fff;
+}
+
+th{
+    padding: 15px;
+    text-align: left; 
+ }
+
+tbody{
+    background: #f2f2f2;
+ }
+
+ td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+ }
+/*tr{
+padding: 15px;
+font-size: 14px;
+color: #fff;
+}*/
+
+tr:nth-child(even){
+    background: #fff;
+}
+tfoot{
+    background: rgb(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;
+}
+
+tfoot td{
+    padding: 15px;
+}
+.table--container button{
+    color: green;
+    background: none;
+    cursor: pointer;
 }
