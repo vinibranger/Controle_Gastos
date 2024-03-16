@@ -1,4 +1,5 @@
 const fastify = require('fastify');
+const db = require("./database")
 
 const app = fastify({ logger: true });
 
