@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.26.2",
-    "pg-promise": "^11.5.4"
+    "pg-promise": "^11.5.4",
+    "uuid": "^9.0.1"
   }
 }

@@ -2,7 +2,7 @@
 const {v4:uuidV4} = require ("uuid")
 
 
-class Pagamentos{
+class Pagamento{
     constructor(tipo, data, descricao, valor, categoria, formaPagamneto){
         this.idMov = uuidV4()
         this.tipo = tipo
@@ -13,4 +13,4 @@ class Pagamentos{
         this.formaPagamneto = formaPagamneto
     }
 }
-module.exports = Pagamentos
+module.exports = Pagamento
