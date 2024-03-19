@@ -12,7 +12,7 @@ app.get("/hello", (request, reply)=>{
     reply.send({message:"HELLO WORD!!"})
 })
 
-app.post("./api/movimento", (request, reply) =>{
+app.post("/api/movimento", (request, reply) =>{
     const pagamento = pagamentoSevices.createPagamento({tipo, data, descricao, valor, categoria, formaPagamneto})
     reply.code(201).send({message:"movimento salvo com sucesso.", pagamento})
 
