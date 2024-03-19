@@ -6,11 +6,11 @@ class PagamentoSevices{
     }
     
     findAllPagamentos(){
-        return this.repository.findAllPagamentos()
+        return this.repository.findAll()
     }
 
-    createPagamento({tipo, data, descricao, valor, categoria, formaPagamneto}){
-        const newPagamento = new Pagamento(tipo, data, descricao, valor, categoria, formaPagamneto);
+    createPagamento({tipo, data, descricao, valor, categoria, formaPagamento}){
+        const newPagamento = new Pagamento(tipo, data, descricao, valor, categoria, formaPagamento);
 
         this.repository.create(newPagamento)
         return newPagamento
