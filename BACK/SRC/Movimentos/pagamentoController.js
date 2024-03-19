@@ -10,7 +10,7 @@ class PagamentoController{
 
     save(request){
         const {tipo, data, descricao, valor, categoria, formaPagamento} = request.body
-        if(!tipo || !descricao || !data || !valor || !categoria || !formaPagamento){
+        if(!tipo  || !data || !valor || !formaPagamento){
             return {code: 400 , body:{message:"Campos obrigatorios faltando"}}
         }
         
